@@ -28,7 +28,7 @@
 <meta property="og:description" content="一.批处理基础（一）.常用批处理内部命令简介批处理定义：顾名思义，批处理文件是将一些列命令按一定的顺序集合为一个可执行的文本文件，其扩展名为BAT或者CMD。这些命令统称批处理命令。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-04-02T06:39:36.997Z">
-<meta property="article:modified_time" content="2024-04-07T09:12:00.772Z">
+<meta property="article:modified_time" content="2024-04-08T02:48:16.931Z">
 <meta property="article:author" content="Deleteuser">
 <meta name="twitter:card" content="summary">
 
@@ -200,7 +200,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-04-07 17:12:00" itemprop="dateModified" datetime="2024-04-07T17:12:00+08:00">2024-04-07</time>
+                <time title="修改时间：2024-04-08 10:48:16" itemprop="dateModified" datetime="2024-04-08T10:48:16+08:00">2024-04-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -268,7 +268,8 @@
 <h4 id="3-PAUSE"><a href="#3-PAUSE" class="headerlink" title="3. PAUSE"></a>3. PAUSE</h4><p>停止系统命令的执行并显示下面的内容。<br>例：<br>PAUSE<br>运行显示：<br>请按任意键继续. . .<br>要显示其他提示语，可以这样用：<br>Echo 其他提示语 pause &gt; nul</p>
 <h4 id="4-errorlevel"><a href="#4-errorlevel" class="headerlink" title="4. errorlevel"></a>4. errorlevel</h4><p>程序返回码<br>echo %errorlevel%<br>每个命令运行结束，可以用这个命令行格式查看返回码<br>用于判断刚才的命令是否执行成功<br>默认值为0，一般命令执行出错会设 errorlevel 为1</p>
 <h4 id="5-title"><a href="#5-title" class="headerlink" title="5. title"></a>5. title</h4><p>设置cmd窗口的标题<br>title 新标题#可以看到cmd窗口的标题栏变了</p>
-<h4 id="6-COLOR"><a href="#6-COLOR" class="headerlink" title="6.COLOR"></a>6.COLOR</h4><p>设置默认的控制台前景和背景颜色。<br>COLOR[attr]<br>attr指定控制台输出的颜色属性<br>颜色属性有两个十六进制数字指定 – 第一个为背景，第二个则为前。每个数字可以为以下任何值之一:<br> 0 &#x3D; 黑色       8 &#x3D; 灰色<br>    1 &#x3D; 蓝色       9 &#x3D; 淡蓝色<br>    2 &#x3D; 绿色       A &#x3D; 淡绿色<br>    3 &#x3D; 浅绿色     B &#x3D; 淡浅绿色<br>    4 &#x3D; 红色       C &#x3D; 淡红色<br>    5 &#x3D; 紫色       D &#x3D; 淡紫色<br>    6 &#x3D; 黄色       E &#x3D; 淡黄色<br>    7 &#x3D; 白色       F &#x3D; 亮白色</p>
+<h4 id="6-COLOR"><a href="#6-COLOR" class="headerlink" title="6.COLOR"></a>6.COLOR</h4><p>设置默认的控制台前景和背景颜色。<br>COLOR[attr]<br>attr指定控制台输出的颜色属性<br>颜色属性有两个十六进制数字指定 – 第一个为背景，第二个则为前。每个数字可以为以下任何值之一:<br> 0 &#x3D; 黑色       8 &#x3D; 灰色<br>    1 &#x3D; 蓝色       9 &#x3D; 淡蓝色<br>    2 &#x3D; 绿色       A &#x3D; 淡绿色<br>    3 &#x3D; 浅绿色     B &#x3D; 淡浅绿色<br>    4 &#x3D; 红色       C &#x3D; 淡红色<br>    5 &#x3D; 紫色       D &#x3D; 淡紫色<br>    6 &#x3D; 黄色       E &#x3D; 淡黄色<br>    7 &#x3D; 白色       F &#x3D; 亮白色<br>如果没有给定任何参数，该命令会将颜色还原到CMD.EXE启动时的颜色。这个这是来自当前控制台、&#x2F;T开关或DefaultColor注册表值。<br>如果用相同的前景和背景颜色来执行COLOR命令，COLOR命令会将ERRORLEVEL设置为1。<br>例如：&quot;COLOR fc&quot;在亮白色产生亮红色</p>
+<h4 id="7-mode配置系统设备"><a href="#7-mode配置系统设备" class="headerlink" title="7.mode配置系统设备"></a>7.mode配置系统设备</h4><p>配置系统设备。<br>串行口：$ MODE COMm[:] [BAUD&#x3D;b] [PARITY&#x3D;p] [DATA&#x3D;d] [STOP&#x3D;s] [to&#x3D;on|off] [xon&#x3D;on|off] [odsr&#x3D;on|off] [octs&#x3D;on|off] [dtr&#x3D;on|off|hs] [rts&#x3D;on|off|hs|tg] [idsr&#x3D;on|off]</p>
 
     </div>
 
@@ -346,7 +347,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E6%89%B9%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">一.批处理基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89-%E5%B8%B8%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%86%85%E9%83%A8%E5%91%BD%E4%BB%A4%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">（一）.常用批处理内部命令简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-REM-%E5%92%8C"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. REM 和 ::</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-ECHO-%E5%92%8C"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. ECHO 和 @</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-PAUSE"><span class="nav-number">1.1.3.</span> <span class="nav-text">3. PAUSE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-errorlevel"><span class="nav-number">1.1.4.</span> <span class="nav-text">4. errorlevel</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-title"><span class="nav-number">1.1.5.</span> <span class="nav-text">5. title</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-COLOR"><span class="nav-number">1.1.6.</span> <span class="nav-text">6.COLOR</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E6%89%B9%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">一.批处理基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89-%E5%B8%B8%E7%94%A8%E6%89%B9%E5%A4%84%E7%90%86%E5%86%85%E9%83%A8%E5%91%BD%E4%BB%A4%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">（一）.常用批处理内部命令简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-REM-%E5%92%8C"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. REM 和 ::</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-ECHO-%E5%92%8C"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. ECHO 和 @</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-PAUSE"><span class="nav-number">1.1.3.</span> <span class="nav-text">3. PAUSE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-errorlevel"><span class="nav-number">1.1.4.</span> <span class="nav-text">4. errorlevel</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-title"><span class="nav-number">1.1.5.</span> <span class="nav-text">5. title</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-COLOR"><span class="nav-number">1.1.6.</span> <span class="nav-text">6.COLOR</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-mode%E9%85%8D%E7%BD%AE%E7%B3%BB%E7%BB%9F%E8%AE%BE%E5%A4%87"><span class="nav-number">1.1.7.</span> <span class="nav-text">7.mode配置系统设备</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -362,7 +363,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
